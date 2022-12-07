@@ -382,6 +382,61 @@ body{
     padding-left: 10px;
 }
 
+@media screen and (max-width: 974px) {
+    .container, .row.g-5.align-items-center, .mb4, .aboutText{
+        width: 100%;
+        left: 0;
+    }
+}
+
+@media screen and (max-width: 974px) {
+    .col-6 .text-start{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 773px){
+      .row .g-3{
+        display: none;
+      }
+}
+
+@media screen and (max-width: 773px){
+    .container{
+        transform: translate(-20%, 0%);
+    }
+}
+
+@media screen and (max-width: 773px){
+    .cards-section.gap.no-top{
+        transform: translate(22.5%, 0%);
+    }
+}
+
+@media screen and (max-width: 772px){
+     .about-counters-img, .about-counters-section.gap{
+        display: none;
+     }
+}
+
+@media screen and (max-width: 772px){
+    .container-xxl.mt-5.pt-5.pb-3{
+        transform: translate(20%, 0%);
+        width: 421px;
+    }
+}
+
+@media screen and (max-width: 772px){
+    .row{
+        width: 170px;
+    }
+}
+/* @media screen and (max-width: 772px){
+    .row.g-4{
+       margin-left: 110px;
+    }
+} */
+
 
 /*** Food Menu ***/
 .nav-pills .nav-item .active {
@@ -628,4 +683,139 @@ hr{
     letter-spacing: 1px;
     box-shadow: none;
     color: var(--primary);
+}
+
+/* cards */
+
+.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl {
+    width: 100%;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+[data-aos][data-aos][data-aos-delay="200"].aos-animate, body[data-aos-delay="200"] [data-aos].aos-animate {
+    transition-delay: .2s;
+}
+html:not(.no-js) [data-aos=flip-up].aos-animate {
+    -webkit-transform: perspective(2500px) rotateX(0);
+    transform: perspective(2500px) rotateX(0);
+}
+html:not(.no-js) [data-aos^=flip][data-aos^=flip] {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    transition-property: -webkit-transform;
+    transition-property: transform;
+    transition-property: transform,-webkit-transform;
+}
+[data-aos][data-aos][data-aos-duration="300"], body[data-aos-duration="300"] [data-aos] {
+    transition-duration: .3s;
+}
+[data-aos][data-aos][data-aos-delay="200"], body[data-aos-delay="200"] [data-aos] {
+    transition-delay: 0s;
+}
+
+
+.card-img, .card-img-top {
+    border-top-left-radius: calc(0.25rem - 1px);
+    border-top-right-radius: calc(0.25rem - 1px);
+}
+.card-img, .card-img-bottom, .card-img-top {
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    width: 100%;
+}
+
+.card-text-data{
+    
+    border-radius: 18px ;
+    height: 330px;
+    width: 260px;
+    padding: 10px;
+    box-shadow: 4px 4px 18px rgb(223, 220, 220);
+}
+
+.card-text-data:hover{
+      color: #FA9D1C;
+      
+}
+
+.card-text-data .on{
+    height: 65px;
+    width: 65px;
+}
+
+.row{
+    margin: 5px;
+}
+
+/* .about-counters-img{
+    height: 30px;
+    width: 35px;
+} */
+
+.row {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col-lg-6 {
+    flex: 0 0 auto;
+    width: 50%;
+}
+
+@media (min-width: 768px)
+.col-md-6 {
+    flex: 0 0 auto;
+    width: 50%;
+}
+
+.count-time {
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+}
+.count-time {
+    display: flex;
+    padding: 50px;
+    box-shadow: 0px -1px 30px 4px rgb(0 0 0 / 5%);
+    -webkit-box-shadow: 0px -1px 30px 4px rgb(16 16 16 / 9%);
+    -moz-box-shadow: 0px -1px 30px 4px rgba(0,0,0,0.05);
+    border-radius: 10px;
+}
+
+.count-time h2{
+    color: #FA9D1C;
+    font-size: 40px;
+    padding-right: 10px;
+}
+
+[data-aos][data-aos][data-aos-delay="300"].aos-animate, body[data-aos-delay="300"] [data-aos].aos-animate {
+    transition-delay: .3s;
+}
+html:not(.no-js) [data-aos=flip-up].aos-animate {
+    -webkit-transform: perspective(2500px) rotateX(0);
+    transform: perspective(2500px) rotateX(0);
+}
+html:not(.no-js) [data-aos^=flip][data-aos^=flip] {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    transition-property: -webkit-transform;
+    transition-property: transform;
+    transition-property: transform,-webkit-transform;
+}
+[data-aos][data-aos][data-aos-duration="400"], body[data-aos-duration="400"] [data-aos] {
+    transition-duration: .4s;
+}
+
+about-counters-section {
+    margin: 20px;
+}
+
+article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
+    display: block;
+    padding: 30px;
 }

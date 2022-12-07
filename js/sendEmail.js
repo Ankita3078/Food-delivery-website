@@ -2,9 +2,9 @@
 function sendEmail() {
     Email.send({
         Host: "smtp.elasticemail.com",
-        Username: "seeram87@gmail.com",
+        Username: "ankitasaha3078999@gmail.com",
         Password : "3FB19D0AD8C772DD07E224244FAFE4888228",
-        To: 'seeram87@gmail.com',
+        To: 'ankitasaha3078999@gmail.com',
         From: document.getElementById("email").value,
         Subject: "Query From Customer's",
         Body: "First Name: " + document.getElementById("firstName").value +
